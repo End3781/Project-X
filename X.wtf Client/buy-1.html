@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ -  PROJECT X</title>
+    <link href='boxicons%402.1.4/css/boxicons.min-1.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css2-1?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+    <link rel="stylesheet" href="css/other.css">
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+
+    <header class="">
+        <a class="logo" href="index-1.html">PROJECT X <span>1.16.5</span></a>
+        <ul class="navlist">
+            <li><a href="index-1.html">Главная</a></li>
+            <li><a style="color: var(--glavny-color);" href="buy-1.html">Купить</a></li>
+            <li><a href="vibor-1.html">Навигационная</a></li>
+            <!-- <li><a class="login" href=""></a></li> -->
+        </ul>
+    </header>
+
+    <!-- Секция #1 - Faq Основное -->
+    <section id="main">
+        <div class="page-text">
+            <h1 class="main-text anim">Выбери нужный срок чита</h1>
+        </div>
+        <div class="Products_container__8gq5l container-xl">
+            <h3 class="mb-5">Наши услуги</h3>
+            <div class="Products_products__3dgHi">
+                <div class="Products_product__kEym8"><img src="img/365.png" alt=""><span>Клиент на 365 дней</span><div class="d-flex"><span>Цена: <s class="text-danger"><b>660</b></s><b class="text-success"> 600<i class="fa-solid fa-ruble-sign ml-1"></i></b></span><div class="Products_discount__e6xD8">Скидка 10%</div></div><a class="btn btn-lg btn-gradient mt-3 w-100" href="pay-1.html"><i class="fa-solid fa-basket-shopping mr-2"></i>Оплатить</a></div>
+                <div class="Products_product__kEym8"><img src="img/lt.png" alt=""><span>Клиент навсегда</span><div class="d-flex"><span>Цена: <s class="text-danger"><b>1 125</b></s><b class="text-success"> 900<i class="fa-solid fa-ruble-sign ml-1"></i></b></span><div class="Products_discount__e6xD8">Скидка 25%</div></div><a class="btn btn-lg btn-gradient mt-3 w-100" href="pay-1.html"><i class="fa-solid fa-basket-shopping mr-2"></i>Оплатить</a></div>
+                <div class="Products_product__kEym8"><img src="img/beta.png" alt=""><span>Бета 365 дней</span><div class="d-flex"><span>Цена: <s class="text-danger"><b>959</b></s><b class="text-success"> 799<i class="fa-solid fa-ruble-sign ml-1"></i></b></span><div class="Products_discount__e6xD8">Скидка 20%</div></div><a class="btn btn-lg btn-gradient mt-3 w-100" href="pay-1.html"><i class="fa-solid fa-basket-shopping mr-2"></i>Оплатить</a></div>
+                <div class="Products_product__kEym8"><img src="img/hwid.png" alt=""><span>Сброс HWID</span><div class="d-flex"><span>Цена: <s class="text-danger"><b>420</b></s><b class="text-success"> 350<i class="fa-solid fa-ruble-sign ml-1"></i></b></span><div class="Products_discount__e6xD8">Скидка 20%</div></div><a class="btn btn-lg btn-gradient mt-3 w-100" href="pay-1.html"><i class="fa-solid fa-basket-shopping mr-2"></i>Оплатить</a></div>
+            </div>
+        </div>
+    
+    </section>
+    <footer> </footer>
+
+    <script>
+
+        // Loading page
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+
+        //Sticky header 
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.querySelector("header");
+            window.addEventListener("scroll", function() { 
+                header.classList.toggle("sticky", window.scrollY > 20);
+            });
+        });
+
+        // FAQs
+
+        const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach((faq) => {
+            faq.addEventListener("click", () => {
+                faq.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>
